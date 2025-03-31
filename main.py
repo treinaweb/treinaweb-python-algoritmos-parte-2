@@ -1,5 +1,4 @@
-from algorithms.sort import quick_sort
+from algorithms.math import sieve_of_eratosthenes
 
-arr = [5, 3, 8, 6, 2]
-
-print(quick_sort(arr))
+n = 10_000_000
+print(sieve_of_eratosthenes(n))
