@@ -1,5 +1,5 @@
-from algorithms.sort import bubble_sort
+from algorithms.sort import quick_sort
 
 arr = [5, 3, 8, 6, 2]
 
-print(bubble_sort(arr))
+print(quick_sort(arr))
