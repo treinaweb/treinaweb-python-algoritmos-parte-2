@@ -1,6 +1,6 @@
-from algorithms.search import jump_search
+from algorithms.search import interpolation_search
 
 arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-target = -1
+target = 10
 
-print(jump_search(arr, target))
+print(interpolation_search(arr, target))

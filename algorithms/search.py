@@ -34,3 +34,16 @@ def jump_search(arr: list[int], tagert: int) -> int:
     if arr[prev] == tagert:
         return prev
     return -1
+
+
+def interpolation_search(arr: list[int], target: int) -> int:
+    left, right = 0, len(arr) - 1
+    while left <= right and arr[left] <= target <= arr[right]:
+        mid = left + ((target - arr[left]) * (right - left)) // (arr[right] - arr[left])
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
