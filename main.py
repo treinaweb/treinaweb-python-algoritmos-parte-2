@@ -1,6 +1,5 @@
-from algorithms.search import interpolation_search
+from algorithms.sort import bubble_sort
 
-arr = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-target = 10
+arr = [5, 3, 8, 6, 2]
 
-print(interpolation_search(arr, target))
+print(bubble_sort(arr))
